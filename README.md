@@ -41,16 +41,6 @@ npm run lint
 
 1. Edit scripts/mercleTreeData.json
 
-Tip:
-```
-category id:
-1 = SEED
-2 = STRATEGIC
-3 = PRESALE
-4 = PUBLIC
-5 = V24MONTH
-```
-
 2. Generate mercle tree root
 ```
 npx hardhat run scripts/generate-mercle-root.js
@@ -68,10 +58,6 @@ cp .env.example .env
 ```
 npx hardhat run scripts/deploy-script.js --network <network name>
 ```
-
-More info: ([link](https://docs.google.com/spreadsheets/d/1Dl3pxKKNMflSSM5MUe-cJdQMooIXXRIo/edit?usp=sharing&ouid=111440494197941322385&rtpof=true&sd=true))
-
-
 
 ## License
 
