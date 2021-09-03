@@ -1,20 +1,14 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.6.12;
-pragma experimental ABIEncoderV2;
 
-import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/cryptography/MerkleProof.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "./YayGiftNFT.sol";
 import "./interfaces/IYayGiftNFT.sol";
 
 // solhint-disable not-rely-on-time
 
 contract YayGiver {
-    using SafeMath for uint256;
-    using SafeERC20 for IERC20;
 
     // contract settings
     bytes32 public immutable mercleRoot;
@@ -24,6 +18,9 @@ contract YayGiver {
     address public token;
     mapping(address => bool) public isClaimed;
 
+    event DeployNFT(
+        address indexed nftAddress
+    );
     event Claim(
         address indexed target,
         bytes32[] merkleProof,
@@ -40,6 +37,8 @@ contract YayGiver {
 
         // deploy nft contract
         token = address(new YayGiftNFT());
+
+        emit DeployNFT(token);
     }
 
     function checkVerify(address _target, bytes32[] calldata _merkleProof) external view returns(bool) {
