@@ -1,5 +1,5 @@
 # YAY gift NFT contracts
-<!-- [![HardhatBuild](https://github.com/YAY-Games/vesting-contract/actions/workflows/testing.yaml/badge.svg)](https://github.com/YAY-Games/vesting-contract/actions/workflows/testing.yaml) -->
+[![HardhatBuild](https://github.com/YAY-Games/gift-nft-contracts/actions/workflows/testing.yaml/badge.svg)](https://github.com/YAY-Games/gift-nft-contracts/actions/workflows/testing.yaml)
 
 - Language: Solidity v0.6.12
 
