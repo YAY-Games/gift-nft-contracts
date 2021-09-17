@@ -13,7 +13,9 @@
 
 ### Deployed
 
-- Coming soon
+[Binance Smart Chain](https://bscscan.com/address/0xd0db7a837db303526F6376c847279b27AE278d87#code)
+
+[Avalanche C-chain](https://cchain.explorer.avax.network/address/0xd4653125Ac7C0C4eE5834541ac5a213a7E4786Fd/contracts)
 
 ## Installation & Usage
 
