@@ -1,5 +1,7 @@
 # YAY gift NFT contracts
+
 [![HardhatBuild](https://github.com/YAY-Games/gift-nft-contracts/actions/workflows/testing.yaml/badge.svg)](https://github.com/YAY-Games/gift-nft-contracts/actions/workflows/testing.yaml)
+[![codecov](https://codecov.io/gh/YAY-Games/gift-nft-contracts/branch/master/graph/badge.svg?token=sdsAmkTzOF)](https://codecov.io/gh/YAY-Games/gift-nft-contracts)
 
 - Language: Solidity v0.6.12
 
